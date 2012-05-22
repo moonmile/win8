@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity Name="d196cf9b-15d9-46ba-b0ec-dc7ac20281ff"
+            Publisher="CN=masuda"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>DynamicLoadImageCppCx</DisplayName>
+    <PublisherDisplayName>masuda</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>DynamicLoadImageCppCx</Description>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="DynamicLoadImageCppCx.App">
+        <VisualElements
+            DisplayName="DynamicLoadImageCppCx"
+            Logo="Assets\Logo.png"
+            SmallLogo="Assets\SmallLogo.png"
+            Description="DynamicLoadImageCppCx"
+            ForegroundText="light"
+            BackgroundColor="#222222">
+            <DefaultTile ShowName="allLogos" />
+            <SplashScreen Image="Assets\SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

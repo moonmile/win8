@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity Name="e81054d2-7a95-4947-93cb-58479253d7e4"
+            Publisher="CN=masuda"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>DynamicLoadImage</DisplayName>
+    <PublisherDisplayName>masuda</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>DynamicLoadImage</Description>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="DynamicLoadImage.App">
+        <VisualElements
+            DisplayName="DynamicLoadImage"
+            Logo="Assets\Logo.png"
+            SmallLogo="Assets\SmallLogo.png"
+            Description="DynamicLoadImage"
+            ForegroundText="light"
+            BackgroundColor="#222222">
+            <DefaultTile ShowName="allLogos" />
+            <SplashScreen Image="Assets\SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
