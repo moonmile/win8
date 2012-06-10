@@ -36,7 +36,7 @@ namespace MetroWinPad
 
         public async static void DebugLog(string text)
         {
-            string url = "http://localhost:8083/metro/method";
+            string url = "http://win8rp-pc.local:8083/metro/method";
             HttpClient client = new HttpClient();
             try
             {
