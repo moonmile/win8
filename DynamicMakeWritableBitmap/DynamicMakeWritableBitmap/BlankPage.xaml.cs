@@ -16,7 +16,6 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.Storage;
 using Windows.Storage.Streams;
 using Windows.Graphics.Imaging;
-
 using System.Runtime.InteropServices.WindowsRuntime;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -87,7 +86,6 @@ namespace DynamicMakeWritableBitmap
 			var mem = new InMemoryRandomAccessStream();
 			await mem.WriteAsync(data.AsBuffer());
 			// await mem.FlushAsync();
-
 			BitmapImage bmp = new BitmapImage();
 			bmp.SetSource(mem);
 			image1.Source = bmp;
